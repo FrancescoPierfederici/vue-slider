@@ -14,9 +14,12 @@ display: flex;
     display: flex;
    
 }
+body{
+    background-color: rgba(0, 0, 0, 0.822);
+}
 h1{
     padding-top: 20px;
-    
+    color: white;
 }
 .margin-top{
     margin-top: 60px;
@@ -27,6 +30,7 @@ h1{
 .imgBox{
     height: 600px;
     width:800px;
+    object-fit: cover;
     
 }
 .dot {
@@ -35,8 +39,7 @@ h1{
     background-color: white;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin:0 10px;
    
     
 }
@@ -54,7 +57,18 @@ h1{
     justify-content: center;
     padding: 10px;
 }
-.color-blue{
-    background-color:blue;
+.dot-container .dot.currentImg{
+    background-color:rgb(207, 130, 28);
     
 }
+.slider-container {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider-container:focus,
+  .slider-container:active {
+      outline: none;
+  }
